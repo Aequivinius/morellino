@@ -14,9 +14,11 @@ pink-gray: #BFADA8; */
 
 * {
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	margin: 0 0 0 0;
 	scroll-behavior: smooth;
-	font-family: 'Garamond', serif;
+	font-family: Garamond, EB Garamond, Georgia, serif;
 	text-align: center;
 }
 
@@ -24,11 +26,13 @@ pink-gray: #BFADA8; */
 ============= */
 
 p {
-	color: var(--brun)
+	color: var(--brun);
+	font-size: 1.5em; 
 }
 
 a {
 	color: inherit;
+	color: var(--noir);
 	font-style: normal;
 	text-decoration: none;
 	border-bottom: 1px solid var(--noir);
@@ -39,8 +43,8 @@ a {
 	letter-spacing: 3px;
 }
 
-a:hover {
-	color: var(--noir);
+a:hover, a:active {
+	color: #000000;
 	border-color: #594827;
 }
 
@@ -54,10 +58,11 @@ a:hover {
 	box-shadow:
 		inset 0px 10px 5px -10px var(--brun),
 		inset 0px -10px 5px -10px var(--brun);
-	padding: 2em 1em 2em 1em;
+
 }
 
 #hero p {
+	padding: 2em 0.5em 2em 0.5em;
 	font-size: 2.5rem;
 	font-style: italic;
 	font-weight: 200;
@@ -77,6 +82,7 @@ a:hover {
     /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
+	z-index: 500;
 }
 
 #story {
@@ -84,12 +90,15 @@ a:hover {
 	box-shadow:
 		inset 0px 10px 5px -10px var(--brun),
 		inset 0px -10px 5px -10px var(--brun);
-	padding: 2em 1em 2em 1em;
+	padding-bottom: 1.5em;
+	
 }
 
 #story p {
-	text-align: justify;
+	text-align: left;
 	font-style: italic;
+	padding: 1.5em 1.5em 0 1.5em;
+	line-height: 1.5em;
 }
 
 /* 
