@@ -10,6 +10,7 @@ pink-gray: #BFADA8; */
 	--gris: #eff0f2;
 	--noir: #484546;
 	--brun: #594827;
+	--beige: #e3dcd3
 }
 
 * {
@@ -30,22 +31,42 @@ p {
 	font-size: 1.5em; 
 }
 
-a {
+a, em {
 	color: inherit;
 	color: var(--noir);
 	font-style: normal;
 	text-decoration: none;
-	border-bottom: 1px solid var(--noir);
-	padding-bottom: 1px;
+
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 0.8em;
 	letter-spacing: 3px;
 }
 
+a {
+	border-bottom: 1px solid var(--noir);
+	padding-bottom: 1px;
+}
+
+a.nounderline {
+	border: none;
+}
+
 a:hover, a:active {
 	color: #000000;
 	border-color: #594827;
+}
+
+.imglink {
+	transition: transform .2s;
+}
+
+.imglink:hover {
+	transform: scale(1.05);
+}
+
+a[href^="http"]:before {
+	content:  "🪟 " ;
 }
 
 /* sections
@@ -55,10 +76,19 @@ a:hover, a:active {
 	height: 100vh;
 	background-color: var(--rose);
 	position: relative;
+	
+}
+
+.shadowed {
 	box-shadow:
 		inset 0px 10px 5px -10px var(--brun),
 		inset 0px -10px 5px -10px var(--brun);
+}
 
+.darkshadowed {
+	box-shadow:
+	inset 0px 10px 5px -10px #000000,
+	inset 0px -10px 5px -10px #000000;
 }
 
 #hero p {
@@ -79,7 +109,16 @@ a:hover, a:active {
 	background-size: cover;
 	min-height: 80vh;
 	min-height: 500px; 
-    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+	z-index: 500;
+}
+
+#blossoms {
+	background-image: url("img/explain.png");
+	background-size: cover;
+	min-height: 80vh;
+	min-height: 500px; 
     background-position: center;
     background-repeat: no-repeat;
 	z-index: 500;
@@ -87,24 +126,66 @@ a:hover, a:active {
 
 #story {
 	background-color: var(--gris);
-	box-shadow:
-		inset 0px 10px 5px -10px var(--brun),
-		inset 0px -10px 5px -10px var(--brun);
-	padding-bottom: 1.5em;
-	
+	padding-top: 0.5em;
+	padding-bottom: 2.25em;
 }
 
 #story p {
 	text-align: left;
 	font-style: italic;
-	padding: 1.5em 1.5em 0 1.5em;
+	padding: 1em 1.5em 0 1.5em;
 	line-height: 1.5em;
 }
 
-/* 
-img {
-	max-width: 100%;
+#product {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--beige);
+	align-items: center;
+}
+
+#describe {
+	padding-bottom: 2.25em;
+	padding-top: 2.25em;
+}
+
+#describe p {
+	text-align: left;
+	font-style: normal;
+	padding-left: 0.5em;
+	padding-right: 1.5em;
+	line-height: 1.5em;
+	padding-bottom: 1em;
+}
+  
+#bottle {
+	flex: 40%;
+}
+
+#bottle img {
+	width: 100%;
 	height: auto;
+	max-width: 800px;
+}
+  
+#describe {
+	flex: 60%;
+}
+  
+@media (max-width: 800px) {
+	#bottle, #describe {
+		flex: 100%;
+	}
+
+	#describe {
+		padding-top: 0.5em;
+		padding-left: 2.5em;
+	}
+}
+
+#get {
+	height: 600px;
+	background-color: var(--noir);
 }
 
 /* typography
