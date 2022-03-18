@@ -85,7 +85,7 @@ p a:hover, p a:active {
 }
 
 p a[href^="http"]:before {
-	content:  "🪟 " ;
+	content:  "➡ " ;
 }
 
 /* sections
@@ -199,7 +199,7 @@ p a[href^="http"]:before {
 
 	#describe {
 		padding-top: 0.5em;
-		padding-left: 2.5em;
+		padding-left: 1em;
 	}
 }
 
