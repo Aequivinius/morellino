@@ -239,6 +239,7 @@ button {
   flex: 25%;
   height: 2.5em;
   padding: 0 1em;
+  margin-top: 2em;
   justify-content: center;
   outline: 0;
   text-align: center;
@@ -271,11 +272,143 @@ button:active {
   fill: #06f;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   button {
     min-width: 170px;
   }
 }
+
+/* cocktails
+============ */
+
+#cocktailss {
+	background-color: var(--gris);
+	padding: 5em;
+}
+
+
+#cocktails {
+	padding-top: 5em;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 5em;
+	min-height: 100vh;
+	display: grid;
+}
+
+@media (max-width: 800px) {
+	#cocktails {
+		grid-template-columns: 1fr;
+	}
+}
+
+figure img {
+	width: 100%;
+
+}
+
+figure { 
+	position: relative;
+
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    transition: linear 500ms;
+}
+
+figure:hover img {
+    -webkit-filter: grayscale(80%) blur(2px) contrast(10%);
+    filter: grayscale(80%) contrast(1%) brightness(175%);
+    transition: linear 500ms;
+    transition: linear 500ms;
+
+}
+
+figcaption {
+    opacity: 0;
+    color: #0D0621;
+    position: absolute;
+    width: 90%;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    align-content: center;
+    text-align: center !important;
+	font-style: italic;
+}
+
+figcaption h3 {
+    text-align: center !important;
+    margin-top: 0.1em !important;
+    width: 100% !important;
+    font-size: 1em;
+    border-top: 1px solid rgb(13, 6, 33) !important;
+    border-bottom: none !important;
+    font-variant: small-caps;
+	font-style: normal;
+}
+
+/* cocktail description
+*********************** */
+
+.collapsed p {
+	margin-bottom: 1em;
+	text-align: left;
+	font-style: italic;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 1em;
+	font-size: 1.5em; 
+	padding-bottom: 1em;
+	color: var(--noir)
+}
+
+li {
+	text-align: left;
+	margin-left: 0;
+}
+
+
+.collapsed {
+	padding-top: 5em;
+	display: none;
+	position: absolute;
+	min-height: 100%;
+	height: 100%;
+	z-index: 150;
+	padding-left: 5em;
+	padding-right: 10em;
+	max-width: 100%;
+	min-width: calc(100% - 10em);
+	background-color: RGBA(239, 240, 242, 0.9);
+    align-items: center;
+}
+
+.collapsed div {
+	min-width: 100%;
+}
+
+.right{
+	float: right;
+}
+
+.collapsed:target {
+	display: flex;
+}
+
+
+#more {
+	min-height: 6em;
+	background-color: var(--brun)
+}
+
 
 /* typography
 ============= */
