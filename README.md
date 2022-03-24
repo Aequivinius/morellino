@@ -3,7 +3,7 @@
 0. Website
 * check SEO
 * recipes for cocktails (all Swiss ingredients)
-* translations (fr > CL, it > papa, jp > Arline)
+* translations (en, fr > CL, it > papa, jp > Arline)
 
 1. Media
 * Pressedossier
