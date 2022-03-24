@@ -317,7 +317,7 @@ button:active {
 		
 		background: radial-gradient(closest-side, var(--noir), rgba(0,0,0,0))
 
-	}
+	}	
 
 	figure img {
 		filter: blur(1px) brightness(0.6) contrast(66%);
@@ -397,6 +397,12 @@ figcaption h3 {
 /* cocktail description
 *********************** */
 
+@media (max-width: 800px) {
+	.collapsed {
+		padding: 1em !important;
+	}
+}
+
 .collapsed p {
 	margin-bottom: 1em;
 	text-align: left;
@@ -418,16 +424,15 @@ li {
 
 
 .collapsed {
-	padding: 1em;	
+	padding: 5em;	
 	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100vh;
+	height: 100%;
+	width: 100%;
 	overflow-y: hidden;
 	z-index: 150;
-	max-width: 100%;
-	min-width: calc(100% - 10em);
 	background-color: RGBA(239, 240, 242, 0.9);
     align-items: center;
 }
