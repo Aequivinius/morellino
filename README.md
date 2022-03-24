@@ -5,22 +5,6 @@
 * recipes for cocktails (all Swiss ingredients)
 * translations (fr > CL, it > papa, jp > Arline)
 
-# Drinks
-* 9 drinks, all CH ingredients
-1. Silence is Gold (lemon)
-3. Tuxedo (red)
-2. Sakura Martini (clear)
-5. Improved Whisky Cocktail (red)
-8. Hemingway Daiquiri (lemon, clear)
-9. Coronation Cocktail (light red)
-4. Daisy (lemon)
-7. Aviation (Takumi, purple)
-6. Brandy Crusta (red, sugared)
-
-
-Cherries
-
-🇨🇭
 1. Media
 * Pressedossier
    * CV
