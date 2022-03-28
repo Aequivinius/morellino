@@ -3,6 +3,9 @@
 0. Website
 * check SEO
 * recipes for cocktails (all Swiss ingredients)
+   * pick 3 for the trophy (tuxedo, sakura, crusta)?
+   * write to oliver from yamazake
+   * beuser and angus special
 * translations (en, fr > CL, it > papa, jp > Arline)
 
 1. Media
