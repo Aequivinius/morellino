@@ -3,7 +3,7 @@
 0. Website
 * check SEO
 * recipes for cocktails (all Swiss ingredients)
-   * pick 3 for the trophy (tuxedo, sakura, crusta)?
+   * pick 3 for the trophy (beuser and angus special, sakura, crusta)?
    * write to oliver from yamazake
    * beuser and angus special
 * translations (en, fr > CL, it > papa, jp > Arline)
@@ -28,10 +28,9 @@
 * Do the tour
 * Is it available in Germany?
 * send it to US and Japan
+* map of people who stock it
 
 3. Social Media
-* Access to Humbel instagram
-* Create a box that they can order (with Humbel products)
 * Promote it through instagram
 
 4. Personal

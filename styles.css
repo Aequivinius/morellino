@@ -54,7 +54,7 @@ h1 {
 	color: var(--gris);
 }
 
-p a, em, h1 a {
+p a, em, h1 a, li a {
 	color: inherit;
 	color: var(--noir);
 	font-style: normal;
@@ -89,8 +89,8 @@ p a:hover, p a:active, h1 a:hover, h1 a:active{
 	transform: scale(1.05);
 }
 
-p a[href^="http"]:before {
-	content:  "➡ " ;
+p a[href^="http"]:before,  li a[href^="http"]:before {
+	content:  "➡" ;
 }
 
 /* sections
@@ -397,6 +397,10 @@ figcaption h3 {
 /* cocktail description
 *********************** */
 
+#COCKTAILS {
+	position: relative;
+}
+
 @media (max-width: 800px) {
 	.collapsed {
 		padding: 1em !important;
@@ -420,21 +424,27 @@ ul {
 li {
 	text-align: left;
 	margin-left: 0;
+	margin-bottom: 0.5em;
 }
 
 
 .collapsed {
 	padding: 5em;	
 	display: none;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 	overflow-y: hidden;
-	z-index: 150;
-	background-color: RGBA(239, 240, 242, 0.9);
-    align-items: center;
+	z-index: 999;
+	background-color: RGBA(239, 240, 242, 0.95);
+	transition: all 0.3s;
+	pointer-events: none;
+	opacity: 0;
+	box-shadow:
+	inset 0px 10px 5px -10px var(--brun),
+	inset 0px -10px 5px -10px var(--brun);
 }
 
 
@@ -443,12 +453,14 @@ li {
 	min-width: 100%;
 }
 
-.right{
+.right {
 	float: right;
 }
 
 .collapsed:target {
 	display: flex;
+	pointer-events: auto;
+	opacity: 1;
 }
 
 
@@ -480,381 +492,3 @@ li {
 	color: var(--beige);
 	border-bottom: 0px solid var(--beige);
 }	
-
-
-/* typography
-============= */
-/* 
-.logo {
-	color: #072620;
-	font-size: 3em;
-	font-weight: 500;
-	letter-spacing: .2em;
-}
-
-.title {
-	font-size: 2.5rem;
-	font-style: italic;
-	font-weight: 200;
-	left: 1em;
-	right: 1em;
-	margin: auto;
-}
-
-@media (max-width: 50rem) {
-	.title {
-		font-size: 1.5em;
-	}
-}
-
-.right {
-	float: right;
-}
-
-.centered {
-	text-align: center;
-}
-
-a {
-	color: inherit;
-	font-style: normal;
-	text-decoration: none;
-	border-bottom: 1px solid #072620;
-	padding-bottom: 1px;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 0.8em;
-	letter-spacing: 3px;
-}
-
-a:hover {
-	color: #072620;
-	border-color: #594827;
-} */
-/* colors
-=========
-turqoise: #072620;
-muddy-brown: #594827;
-Ocker: #BF8E63;
-camel: #A6785D;
-pink-gray: #BFADA8; */
-/* p {
-	text-align: justify;
-	font-size: 1.2em;
-	line-height: 1.5em;
-	margin: 3em;
-}
-
-p a, label a {
-	color: #072620;
-	border-color: #BF8E63;
-}
-
-p a:hover,
-p a:focus,
-label a:hover {
-	color: #BF8E63;
-	border-color: #072620;
-}
-
-.contact a {
-	color: #BF8E63;
-	border-color: #BFADA8
-}
-
-.contact a:hover {
-	color: #BFADA8;
-	border-color: #BF8E63;
-}
-
-.text-img {
-	height: .9em;
-}
-
-.noline {
-	border-bottom: 0px;
-}
-
-em {
-	font-style: normal;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-size: 0.85em;
-	letter-spacing: 0.2em;
-	color: #BF8E63;
-}
-
-em.dark {
-	color: #072620;
-}
-
-.hand {
-	font-family: 'Rock Salt';
-	text-transform: none;
-}
-
-.italic {
-	font-style: italic;
-}
-
-.indent {
-	text-indent: 1em;
-}
-
-
-@media (min-width: 50rem) {
-	.title {
-		font-size: 3.7rem;
-	}
-	
-	p {
-		font-size: 1.5em;
-	}
-}
-
-.filtered {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-.tooltip {
-	border-bottom: 1px  dotted #072620;
-	padding-bottom: 1px;
-} */
-
-/* navigation
-========= */
-/*
-nav ul {
-
-	padding: 0;
-	list-style: none;
-}
-
-nav li {
-	padding-bottom: 0.5em;
-
-	display: inline-block;
-}
-
-nav a {
-	margin: 1em;
-	border: 0px;
-}
-
-@media (max-width: 50rem) {
-	nav {
-		display: none;
-	}
-} */
-
-
-/* sections
-============ */
-/*
-.home {
-	background-color: var(--rose);
-	color: var(--noir);
-	text-shadow: 1px 1px 1px #A6785D;
-	height: 88vh;
-	position: relative;
-	box-shadow:
-		inset 0px 10px 5px -10px var(--brun),
-		inset 0px -10px 5px -10px var;
-}
-
-.home .title {
-	margin: 1em 0 1em 0;
-}
-
-.title {
-	position: absolute;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-
-}
-
-.contact {
-	padding-top: 5em;
-	padding-bottom: 1em;
-} */
-
-/* todo
-======= */
-/*
-ul.todo {
-	margin: 3em;
-	font-size: 1.5em;
-	padding: 0;
-	font-style: italic;
-	list-style: none;
-}
-
-.todo li {
-	padding-bottom: 0.5em;
-	position: relative;
-}
-
-div.todo {
-	display: flex;
-	margin-left: 25px;
-	margin-right: 3em;
-	width: 100%;
-	height: 1em;
-}
-
-.dots {
-	display: block;
-	background: radial-gradient(circle, rgba(0,0,0,.62) 1px, transparent 1px) repeat-x;
-	background-size: 10px 1.5em;
-	flex-grow: 10;
-}
-
-label {
-	height: 1em;
-}
-
-.cost {
-	font-style: normal;
-	font-family: 'Rock Salt';
-	font-size: 0.6em;
-	padding-right: 1.8em;
-}
-
-input[type='checkbox'] {
-	height: 1em;
-	position: absolute;
-	left: 10px;
-	top: 11px;
-}
-
-input[type=checkbox]:checked + .todo {
-	text-decoration: line-through;
-}
-
-@media (max-width: 50rem) {
-	.dots {
-		display: none;
-	}
-
-	.cost {
-		background: red;
-
-		display: none;
-	}
-
-	label {
-		text-align: left;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		height: 1.5em;
-		padding-right: 0.5em;
-	}
-}
-
-*/
-
-/* aspects
-============ */
-
-/*
-.aspects {
-	padding: 0;
-	margin: 0 1em 1em 1em;
-	position: relative;
-}
-
-figure {
-	position: relative;
-	margin: 0 0 1em 0;
-	padding-top: 1em;
-	width: 100%;
-}
-
-figure img {
-	display: block;
-	cursor: pointer;
-}
-
-figcaption {
-	font-size: 0.5em;
-	position: absolute;
-	bottom: 2em;
-	color: #072620;
-	z-index: 100;
-	text-transform: uppercase;
-	left:0;
-	right:0;
-	margin-left:auto;
-	margin-right:auto;
-	font-weight: 500;
-	letter-spacing: 1.5em;
-	display: block;
-	cursor: pointer;
-}
-
-figure:hover figcaption {
-	display: block;
-}
-
-@media (min-width: 50rem) {
-
-	figure {
-		display: inline-block;
-		width: 30% !important;
-		margin: 1.5% 1.5% 1.5% 1.5%;
-	}
-	
-	figcaption {
-		display: none;
-	}
-}
-
-.contact {
-	background-color: #072620;
-	color: #BFADA8;
-}
-
-.collapsed {
-	display: none;
-	position: absolute;
-	top: 0px;
-	width: 100%;
-	min-height: 100%;
-	max-height: 100%;
-	z-index: 150;
-	overflow-y: scroll;
-	background-color: rgba(255, 255, 255,0.95);
-}
-
-.collapsed:target {
-	display: block;
-}
-
-.contact .collapsed {
-	position: relative;
-	background: none;
-}
-
-.collapser:target .collapsed {
-	display: inline;
-}
-
-.collapser:target .collapsing {
-	display: none;
-} */
-
-
-
-/* colors
-=========
-
-turqoise: #072620;
-muddy-brown: #594827;
-Ocker: #BF8E63;
-camel: #A6785D;
-pink-gray: #BFADA8;
-
-*/
