@@ -10,20 +10,12 @@
 1. Media
 * Pressedossier
    * CV
-   * Humbel profile
    * Images
-   * Morellino profile
-      * What is it
-      * Why we did it
-      * Quotes from Heiss and Marxer and myself
-      * Hard facts
-      * Cocktails
+   * Get some quote from Wondrich, Zbinden
 * Mixology (through Humbel), NZZ Bellevue, Bar News, Kaspar
-* ...
-* Get some quote from Wondrich
+
 
 2. Peers
-* Make a promo set
 * Do the tour
 * Is it available in Germany?
 * send it to US and Japan
