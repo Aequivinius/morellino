@@ -4,7 +4,6 @@
 * check SEO
 * recipes for cocktails (all Swiss ingredients)
    * pick 3 for the trophy (beuser and angus special, sakura, crusta)?
-   * write to oliver from yamazake
    * beuser and angus special
 * translations (en, fr > CL, it > papa, jp > Arline)
 
