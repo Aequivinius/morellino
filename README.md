@@ -8,12 +8,8 @@
 * translations (en, fr > CL, it > papa, jp > Arline)
 
 1. Media
-* Pressedossier
-   * CV
-   * Images
-   * Get some quote from Wondrich, Zbinden
-* Mixology (through Humbel), NZZ Bellevue, Bar News, Kaspar
-
+* Pressedossier, get some quote from Wondrich, Zbinden
+* Mixology (through articles), NZZ Bellevue, Bar News, Kaspar
 
 2. Peers
 * Do the tour
