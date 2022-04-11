@@ -6,9 +6,11 @@
    * pick 3 for the trophy (beuser and angus special, sakura, crusta)?
    * beuser and angus special
 * translations (en, fr > CL, it > papa, jp > Arline)
+  > also for presse dossier
 
 1. Media
 * Pressedossier, get some quote from Wondrich, Zbinden
+> include website
 * Mixology (through articles), NZZ Bellevue, Bar News, Kaspar
 
 2. Peers
