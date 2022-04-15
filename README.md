@@ -2,7 +2,6 @@
 
 0. Website
 * check SEO
-* recipes for cocktails
 * translations (en, fr > CL, it > papa, jp > Arline)
 > also for presse dossier
 
