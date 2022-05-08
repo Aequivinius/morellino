@@ -8,12 +8,13 @@
 1. Media
 * Pressedossier, get some quote from Wondrich, Zbinden
 > include website
-* Mixology (through articles), NZZ Bellevue, Bar News, Kaspar
+* Mixology (through articles), NZZ Bellevue, Bar News, Pouring Tales
 * others?
 
 2. Peers
 * Do the tour
 * map of people who stock it
+* Kaspar collab
 
 3. Personal
 * Reboot instagram
