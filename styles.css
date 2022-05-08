@@ -121,7 +121,6 @@ p a[href^="http"]:before,  li a[href^="http"]:before {
 	font-style: italic;
 	font-weight: 200;
 	color: var(--noir);
-	text-shadow: 1px 1px 1px #A6785D;
 	position: absolute;
 	top: 50%;
 	-ms-transform: translateY(-50%);
