@@ -3,6 +3,22 @@
 0. Website
 * check SEO
    * https://www.socialmediatoday.com/content/seo-dummies-learn-seo-10-simple-steps
+   * https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines?hl=en
+        * sitemap
+        * ifmodified?
+        * robots.txt
+        * submit for crawling
+        * better title?
+        * structured data
+        * url inspection tool
+        * valid html
+        * pagespeed
+        * webpage
+        * mobile friendly test
+        * browsers cross
+        * https
+        * test with screen reader
+   * https://validator.w3.org/nu/#file
 * go over french site
 * nicer urls
 * more translations (en, fr > CL, it > papa, jp > Arline)
