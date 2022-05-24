@@ -6,16 +6,13 @@ SEO in a nutshell
 * use  http://www.google.com/webmasters/tools/
 * if multiple languages, hreflang
 * some non-google tracker (counter.dev ...)
+* structured data (with generator, then test it on https://search.google.com/test/rich-results and https://validator.schema.org/)
+* search console (change dns) > report
 
 0. Website
 * check SEO
    * https://www.socialmediatoday.com/content/seo-dummies-learn-seo-10-simple-steps
    * https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines?hl=en
- 
-        * ifmodified?
-        * robots.txt
-        * submit for crawling
-        * better title?
         * structured data
         * url inspection tool
         * valid html
@@ -26,9 +23,10 @@ SEO in a nutshell
         * https
         * test with screen reader
    * google search console
+       * go through report
+          * better image sizes
    * https://validator.w3.org/nu/#file
 * go over french site
-* nicer urls
 * more translations (en, fr > CL, it > papa, jp > Arline)
 > also for presse dossier
 
