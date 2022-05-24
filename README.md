@@ -5,6 +5,7 @@
    * https://www.socialmediatoday.com/content/seo-dummies-learn-seo-10-simple-steps
    * https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines?hl=en
         * sitemap
+         * do the text version
         * ifmodified?
         * robots.txt
         * submit for crawling
