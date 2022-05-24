@@ -10,12 +10,38 @@
 		content="Morellino is a liqueur in the style of a Maraschino, made for craft bartenders and their cocktails from Swiss morello cherries">
 	<link href="styles.css" rel="stylesheet" type="text/css">
 
-	<!-- alternate langauges-->
+	<!-- alternate languages-->
 	<!-- thanks for https://www.aleydasolis.com/english/international-seo-tools/hreflang-tags-generator/ -->
 	<link rel="alternate" href="https://www.morellino.ch/kirsch-likoer" hreflang="de-ch" />
 	<link rel="alternate" href="https://www.morellino.ch/kirsch-likoer" hreflang="de" />
 	<link rel="alternate" href="https://www.morellino.ch/liqueur-de-cerises" hreflang="fr-ch" />
 	<link rel="alternate" href="https://www.morellino.ch/liqueur-de-cerises" hreflang="fr" />
+
+	<!-- JSON-LD -->
+	<script type='application/ld+json'>
+		{
+		  "@context": "https://www.schema.org",
+		  "@type": "product",
+		  "brand": {
+			  "@type": "Organization",
+			  "name": "Humbel"
+			},
+		  "name": "Morellino",
+		  "image": "https://www.morellino.ch/img/morellino.jpg",
+		  "description": "Ein Kirsch-Likör im Stile eines Maraschinos, gefertigt ausschliesslich aus Schweizer Schattenmorellen, für den Einsatz in klassischen Cocktails wie dem Last Word, dem Aviation und der Brandy Crusta.",
+		  "offers": {
+			  "url": "https://shop.humbel.ch/de/shop/60-partnerprodukte/morellino-kirschlikoer-nicola-colic-stork-trophy-2019",
+			"@type": "Offer",
+			"priceCurrency": "CHF",
+			"availability": "http://schema.org/InStock",
+			"price": "35.00",
+			"seller": {
+				"@type": "Organization",
+				"name": "Humbel"
+			}
+		  }
+		}
+	</script>
 
 
 	<!-- svg as favicon -->
@@ -62,7 +88,7 @@
 
 	<section id="product">
 		<div id="bottle">
-			<a class="nounderline" href="#get"><img class="imglink" src="img/bottle.jpg"
+			<a class="nounderline" href="#get"><img class="imglink" src="img/morellino.jpg"
 					alt="Der Kirschlikör Morellino ist in einer Flasche zu 500 ml erhältlich."></a>
 		</div>
 		<div id="describe">

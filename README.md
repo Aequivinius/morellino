@@ -1,11 +1,17 @@
 # Morellino
 
+SEO in a nutshell
+* alt tags
+* sitemap in txt, send it to https://www.google.com/ping?sitemap=https://www.morellino.ch/sitemap.txt
+* use  http://www.google.com/webmasters/tools/
+* if multiple languages, hreflang
+* some non-google tracker (counter.dev ...)
+
 0. Website
 * check SEO
    * https://www.socialmediatoday.com/content/seo-dummies-learn-seo-10-simple-steps
    * https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines?hl=en
-        * sitemap
-         * do the text version
+ 
         * ifmodified?
         * robots.txt
         * submit for crawling
@@ -19,6 +25,7 @@
         * browsers cross
         * https
         * test with screen reader
+   * google search console
    * https://validator.w3.org/nu/#file
 * go over french site
 * nicer urls
