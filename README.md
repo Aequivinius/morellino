@@ -2,6 +2,7 @@
 
 0. Website
 * check SEO
+   * https://www.socialmediatoday.com/content/seo-dummies-learn-seo-10-simple-steps
 * go over french site
 * nicer urls
 * more translations (en, fr > CL, it > papa, jp > Arline)
