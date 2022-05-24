@@ -1,4 +1,3 @@
-DirectoryIndex kirsch-likoer
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^morellino.ch [NC]
