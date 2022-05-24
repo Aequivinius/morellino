@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^morellino.com [NC]
-RewriteRule ^(.*)$ https://www.morellino.com/$1 [L,R=301,NC]
+RewriteCond %{HTTP_HOST} ^morellino.ch [NC]
+RewriteRule ^(.*)$ https://www.morellino.ch/$1 [L,R=301,NC]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [R=301,L]
 RewriteCond %{SCRIPT_FILENAME} !-d
