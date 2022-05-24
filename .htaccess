@@ -1,7 +1,9 @@
-Redirect 301 / http://www.morellino.ch/kirsch-likoer
+Redirect 301 / https://www.morellino.ch/kirsch-likoer
 
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^morellino.ch
-RewriteRule (.*) https://www.morellino.ch/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} !=""
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteRule ^kirsch-likoer index.html [NC,L]
 RewriteRule ^liqueur-de-cerises fr.html [NC,L]
