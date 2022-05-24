@@ -358,12 +358,25 @@ button {
 	white-space: nowrap
 }
 
+button a {
+	color: var(--noir) !important;
+	font-style: normal !important;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
 button:hover {
 	border-color: var(--rose);
 	background-image: linear-gradient(144deg, var(--rose), var(--noir));
 
-	color: var(--rose);
+
 	fill: var(--rose);
+}
+
+button:hover a {
+	color: var(--rose) !important;
 }
 
 button:active {
@@ -416,7 +429,7 @@ button:active {
 		filter: blur(1px) brightness(0.6) contrast(66%);
 	}
 
-	figcaption h3,
+	figcaption h2,
 	figcaption span {
 		color: var(--gris);
 		text-shadow: 0px 0px 1px black;
@@ -424,7 +437,7 @@ button:active {
 
 
 
-	figcaption h3 {
+	figcaption h2 {
 		border-top: 1px solid var(--gris) !important;
 
 	}
@@ -477,7 +490,7 @@ figcaption {
 	font-style: italic;
 }
 
-figcaption h3 {
+figcaption h2 {
 	text-align: center !important;
 	margin-top: 0.1em !important;
 	width: 100% !important;

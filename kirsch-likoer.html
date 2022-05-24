@@ -49,7 +49,12 @@
 		"@context": "http://schema.org/",
 		"@type": "Recipe",
 		"name": "Silence is Gold",
-		"image": "https://www.morellino.ch/img/silence.jpg",
+		"image": {
+			"@type": "ImageObject",
+			"url": "https://www.morellino.ch/img/silence.jpg",
+			"height": 200,
+			"width": 200
+		  },
 		"author": {
 		  "@type": "Person",
 		  "name": "Nico Čolić"
@@ -60,7 +65,6 @@
 		"description": "Reden ist Silber, doch der Geschmack spricht für sich. Hier eine Last Word-Variation, in welcher der Morellino besonders gut wirken kann. Noten von Malz und Kakao gepaart mit Kirsche — ein Getränk für Tresenkräfte und solche, die zu es sein wünschten.",
 		  "totalTime": "PT5M",
 		  "recipeYield": "1",
-
 		  "recipeCategory": "Cocktail",
 			"recipeIngredient": [
 			  "30 ml rauchiger Scotch",
@@ -84,9 +88,6 @@
 		]
 	  }
 	</script>
-
-
-
 
 	<!-- svg as favicon -->
 	<link rel="icon"
@@ -117,9 +118,9 @@
 		</div>
 	</section>
 
-	<section id="explain"></section>
+	<div id="explain"></div>
 
-	<section id="story" class="shadowed">
+	<div id="story" class="shadowed">
 		<p>Gewinner der dritten <a
 				href="https://www.humbel.ch/aktuelles/storchengeklapper/die-3-stork-trophy-die-stork-trophy-fliegt-nach-zuerich-16/"
 				target="_blank">Stork Trophy</a> von 2019, <a href="#get">Nicola Čolić</a>, übersetzt den Maraschino in
@@ -128,9 +129,9 @@
 		<p>Er kommt als tragende Komponente in Mischgetränken wie der <a href="#crusta">Brandy Crusta</a> oder <a
 				href="#silence">Last Word</a> zum Einsatz, und spendet dort seine zurückhaltende Frucht und
 			tiefgründigen Nachhall.</p>
-	</section>
+	</div>
 
-	<section id="product">
+	<div id="product">
 		<div id="bottle">
 			<a class="nounderline" href="#get"><img class="imglink" src="img/morellino.jpg"
 					alt="Der Kirschlikör Morellino ist in einer Flasche zu 500 ml erhältlich."></a>
@@ -144,11 +145,11 @@
 				ebenfalls aus Schatten&shy;morellen gewonnen wird. Dies verleiht ihm den nötigen Biss, welcher
 				verschiedenen <a href="#COCKTAILS">Cocktails</a> seinen Charakter verleiht.</p>
 		</div>
-	</section>
+	</div>
 
-	<section id="blossoms" class="darkshadowed"></section>
+	<div id="blossoms" class="darkshadowed"></div>
 
-	<section id="get">
+	<div id="get">
 		<p>Die ersten 300 Flaschen <em>Morellino</em>, handsigniert und nummeriert, sind online bei <a
 				href="https://shop.humbel.ch/de/shop/60-partnerprodukte/morellino-kirschlikoer-nicola-colic-stork-trophy-2019">Humbel</a>
 			erhältlich. Weitere Information zur Geschichte des <em>Maraschinos</em>, zu <em>Humbel</em> und zu
@@ -157,23 +158,20 @@
 		</p>
 
 		<div class="buttoncontainer">
-			<a href="https://shop.humbel.ch/de/shop/60-partnerprodukte/morellino-kirschlikoer-nicola-colic-stork-trophy-2019"
-				target="_blank" class="nounderline"><button>🍾 bestellen</button></a>
-			<a href="pressedossier.zip" class="nounderline"><button>⏬ Pressedossier</button></a>
+			<button><a
+					href="https://shop.humbel.ch/de/shop/60-partnerprodukte/morellino-kirschlikoer-nicola-colic-stork-trophy-2019"
+					target="_blank" class="nounderline">🍾 bestellen</a></button>
+			<button><a href="pressedossier.zip" class="nounderline">⏬ Pressedossier</a></button>
 		</div>
-	</section>
+	</div>
 
 
-	<section id="COCKTAILS" class="shadowed">
+	<div id="COCKTAILS" class="shadowed">
 
 		<p>Die Tage, in welchen Liköre an sich getrunken werden, sind vorbei; und wenngleich auch jedem Liebhaber
 			Süssens vom Reingenuss des <em>Morellinos</em> nicht abgeraten sein soll, so findet letzter doch seine
 			Erfüllung als Zutat in Mischgetränken. Nachfolgend einige Empfehlungen, wie er geistreich einzusetzen ist.
-		</p> <br />
-
-		<!-- <p>Der <em>Morellino</em> ist ein Schweizer Produkt, und verkörpert auch eine <i>Schweizer Ausrichtung der
-				Mixologie</i> — so sind in den Getränken hiernach nach Möglichkeit Zutaten aufgelistet, welche auch in
-			der 🇨🇭 vorkommen.</p> -->
+		</p>
 
 		<div id="cocktails">
 			<!-- drink: silence is gold -->
@@ -182,7 +180,7 @@
 						alt="Silence is Gold ist ein Cocktail mit Morellino, Scotch und Chartreuse">
 
 					<figcaption><span>mit Scotch & Chartreuse</span>
-						<h3>Silence is Gold</h3>
+						<h2>Silence is Gold</h2>
 					</figcaption>
 				</a>
 			</figure>
@@ -218,9 +216,8 @@
 							es einem die Sprache verschlägt: <em>Last Word</em>, <em>Wordsmith</em> (mit Rum) oder eben,
 							wie hier, <em>Silence is Gold</em>.</span></p>
 
-					<p><a class="right" href="#silence">Schliessen</a>
+					<p><a class="right" href="#silence">Schliessen</a></p>
 				</div>
-				</p>
 			</div>
 
 
@@ -229,7 +226,7 @@
 				<a href="#TUXEDO"><img src="img/tuxedo.jpg"
 						alt="Der Tuxedo ist ein Cocktail mit Morellino, Gin und Absinthe">
 					<figcaption><span>mit Gin & Absinthe</span>
-						<h3>Tuxedo</h3>
+						<h2>Tuxedo</h2>
 					</figcaption>
 				</a>
 			</figure>
@@ -252,14 +249,13 @@
 								ausschwenken. Zutaten auf Eis kaltrühren und in die Cocktailschale abseihen.</span></li>
 					</ul>
 
-					<p><span style="font-style: normal;">Als Garnitur bieten sich <em>Holunder-Kapern</em> an, also
-							unreife Holunder-Beeren, welche in Salz eingelegt wurden und in der <i>nordic cuisine</i>
-							Einsatz finden. Sie ersetzen hier die für den <em>Martini</em> typische, aber auch etwas
-							einfältige Olive; und unterstreichen geschmacklich diese Kapriziose optimal.</p>
+					<p style="font-style: normal;">Als Garnitur bieten sich <em>Holunder-Kapern</em> an, also
+						unreife Holunder-Beeren, welche in Salz eingelegt wurden und in der <i>nordic cuisine</i>
+						Einsatz finden. Sie ersetzen hier die für den <em>Martini</em> typische, aber auch etwas
+						einfältige Olive; und unterstreichen geschmacklich diese Kapriziose optimal.</p>
 
-					<p><a class="right" href="#tuxedo">Schliessen</a>
+					<p><a class="right" href="#tuxedo">Schliessen</a></p>
 				</div>
-				</p>
 			</div>
 
 			<!-- drink: sakura -->
@@ -267,7 +263,7 @@
 				<a href="#SAKURA"><img src="img/sakura.jpg"
 						alt="Der Sakura ist ein Cocktail mit Morellino, japanischem sake und Gin">
 					<figcaption><span>mit sake & Gin</span>
-						<h3 title="sakura martini">桜　マティーニ</h3>
+						<h2 title="sakura martini">桜　マティーニ</h2>
 					</figcaption>
 				</a>
 			</figure>
@@ -306,9 +302,8 @@
 					<p style="font-style: normal;">Mit einer in Salz eingelegten Kirschblüte garnieren. Diese findet man
 						gelegentlich in Japanläden, werden sie doch gerne dort in Süssigkeiten eingesetzt.</p>
 
-					<p><a class="right" href="#sakura">Schliessen</a>
+					<p><a class="right" href="#sakura">Schliessen</a></p>
 				</div>
-				</p>
 			</div>
 
 
@@ -317,7 +312,7 @@
 				<a href="#IMPROVED"><img src="img/improved.jpg"
 						alt="Der Improved Whisky Cocktail besteht aus Morellino und wahlweise Bourbon oder Genever">
 					<figcaption><span>mit Bourbon oder Genever</span>
-						<h3>Improved Whisky Cocktail</h3>
+						<h2>Improved Whisky Cocktail</h2>
 					</figcaption>
 				</a>
 			</figure>
@@ -355,9 +350,8 @@
 							href="https://shop.humbel.ch/de/shop/22-bio-70cl/orangeau-liqueur-bio">Triple Sec</a>
 						aufzukochen und nach 4-wöchtiger Ziehzeit zur Dekoration heranzuziehen.</p>
 
-					<p><a class="right" href="#improved">Schliessen</a>
+					<p><a class="right" href="#improved">Schliessen</a></p>
 				</div>
-				</p>
 			</div>
 
 
@@ -366,7 +360,7 @@
 				<a href="#HEMINGWAY"><img src="img/hemingway.jpg"
 						alt="Der Hemingway Daiquirí ist ein Cocktail aus Morellino, Rum und Grapefruit">
 					<figcaption><span>mit Rum & Grapefruit</span>
-						<h3>Hemingway Daiquirí</h3>
+						<h2>Hemingway Daiquirí</h2>
 					</figcaption>
 				</a>
 			</figure>
@@ -397,9 +391,8 @@
 						verzichtet werden. Bei jedem <em>Daiquirí</em> sind die kleinen Eiskristalle, die sich beim
 						rechten Schütteln ergeben, Teil des Genusses.</p>
 
-					<p><a class="right" href="#hemingway">Schliessen</a>
+					<p><a class="right" href="#hemingway">Schliessen</a></p>
 				</div>
-				</p>
 			</div>
 
 			<!-- drink: PoW -->
@@ -407,7 +400,7 @@
 				<a href="#WALES"><img src="img/wales.jpg"
 						alt="Der Prince of Wales ist ein Cocktail aus Morellino, Ananas und Rye Whisky">
 					<figcaption><span>mit Rye & Ananas</span>
-						<h3>Prince of Wales</h3>
+						<h2>Prince of Wales</h2>
 					</figcaption>
 				</a>
 			</figure>
@@ -440,9 +433,8 @@
 						Wie beim <a href="#CORONATION">Coronation</a> ist hier als Garnitur eine Zitronenzeste passend,
 						oder, falls zur Hand, ein Blatt (Ananas-)Salbei.</p>
 
-					<p><a class="right" href="#wales">Schliessen</a>
+					<p><a class="right" href="#wales">Schliessen</a></p>
 				</div>
-				</p>
 			</div>
 
 
@@ -451,7 +443,7 @@
 				<a href="#CORONATION"><img src="img/coronation.jpg"
 						alt="Der Coronation Nummer 1 Cocktail besteht aus Morellino, Sherry und Wermut">
 					<figcaption><span>mit Sherry & Wermut</span>
-						<h3>Coronation № 1</h3>
+						<h2>Coronation № 1</h2>
 					</figcaption>
 				</a>
 			</figure>
@@ -476,9 +468,8 @@
 						Krönung mit einer Zitronenzeste ist hier nicht fehl, oder, falls Eindruck geschindet werden
 						muss, mit einem Blatt Pfirsich-Salbei.</p>
 
-					<p><a class="right" href="#coronation">Schliessen</a>
+					<p><a class="right" href="#coronation">Schliessen</a></p>
 				</div>
-				</p>
 			</div>
 
 
@@ -490,7 +481,7 @@
 				<a href="#CRUSTA"><img src="img/crusta.jpg"
 						alt="Die Brandy Crusta ist ein Cocktail aus Morellino, Cognac und Zitrone">
 					<figcaption><span>mit Cognac & Zitrone</span>
-						<h3>Brandy Crusta</h3>
+						<h2>Brandy Crusta</h2>
 					</figcaption>
 				</a>
 			</figure>
@@ -531,9 +522,8 @@
 						eingenommen werden soll, so kann auf diese verzichtet werden, und der namensgebenden
 						Zuckerkruste Raum zur Wirkung gelassen werden.</p>
 
-					<p><a class="right" href="#crusta">Schliessen</a>
+					<p><a class="right" href="#crusta">Schliessen</a></p>
 				</div>
-				</p>
 			</div>
 
 
@@ -542,7 +532,7 @@
 				<a href="#AVIATION"><img src="img/aviation.jpg"
 						alt="Der Aviation Cocktail besteht aus Morellino, Gin und Parfait Amour">
 					<figcaption><span>mit Gin & Rose</span>
-						<h3>Aviation</h3>
+						<h2>Aviation</h2>
 					</figcaption>
 				</a>
 			</figure>
@@ -570,17 +560,16 @@
 						als Garnitur wiederkehren: Man nehme hierzu ein kandiertes Veilchen, und befestige es mit etwas
 						geschmolzener, weisser Schokolade am Fusse des Glasses.</p>
 
-					<p><a class="right" href="#aviation">Schliessen</a>
+					<p><a class="right" href="#aviation">Schliessen</a></p>
 				</div>
-				</p>
 			</div>
 		</div>
-	</section>
+	</div>
 
-	<section id="more">
-		<p>mit ❤️ hergestellt von <em>Humbel</em> & &nbsp; <a target="_blank"
-				href="https://www.hedonisms.ch/contact">Nico Čolić</a> im Jahre der 🍒 2022.
-	</section>
+	<div id="more">
+		<p>mit hergestellt von <em>Humbel</em> & &nbsp; <a target="_blank" href="https://www.hedonisms.ch/contact">Nico
+				Čolić</a> im Jahre der <span style="font-style: normal;">🍒</span> 2022.
+	</div>
 </body>
 
 </html>

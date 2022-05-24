@@ -14,7 +14,6 @@ SEO in a nutshell
    * https://www.socialmediatoday.com/content/seo-dummies-learn-seo-10-simple-steps
    * https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines?hl=en
         * structured data
-        * url inspection tool
         * valid html
         * pagespeed
         * webpage
@@ -26,6 +25,7 @@ SEO in a nutshell
        * go through report
           * better image sizes
    * https://validator.w3.org/nu/#file
+   * gault millaut backlink
 * go over french site
 * more translations (en, fr > CL, it > papa, jp > Arline)
 > also for presse dossier
